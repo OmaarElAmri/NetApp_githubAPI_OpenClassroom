@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Controllers.Fragments.DetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF87"
+            android:id="@+id/profileImageView"
+            android:layout_centerHorizontal="true"
+            android:gravity="top"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileImageView"
+            android:layout_centerHorizontal="true"
+            android:textColor="#199"
+            android:textSize="28sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleLinearLayout"
+            android:layout_marginTop="350dp">
+
+            <TextView
+                android:id="@+id/followingTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="following"
+                tools:ignore="HardcodedText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#199"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/followersTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="followers"
+                tools:ignore="HardcodedText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#199"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/repositoriesTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="repositories"
+                tools:ignore="HardcodedText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#199"
+                android:textSize="28sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleLinearLayout"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/followingNumberTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                tools:ignore="HardcodedText"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#199"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/followersNumberTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Loading..."
+                android:gravity="center"
+                android:textColor="#199"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/repositoriesNumberTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#199"
+                android:textSize="28sp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
